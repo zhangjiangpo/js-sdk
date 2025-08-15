@@ -1,8 +1,5 @@
-import type { AddFunction } from '../types'
-
-export const add: AddFunction = (a: number, b: number): number => {
-  return a + b
-}
+import { SendToKibana } from '../utils/sendToKibana'
+export * from '../utils/sendToKibana'
 export default {
-  add
+  SendToKibana
 }

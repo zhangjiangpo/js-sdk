@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("./core/index.cjs.js");require("vue");const r=require("./HelloWorld.vue_vue_type_script_setup_true_lang-DhOfr3BE.js");exports.add=e.add;exports.HelloWorld=r._sfc_main;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("./sendToKibana-DGkTsWpW.js");require("vue");const r=require("./HelloWorld.vue_vue_type_script_setup_true_lang-DhOfr3BE.js");exports.SendToKibana=e.SendToKibana;exports.HelloWorld=r._sfc_main;

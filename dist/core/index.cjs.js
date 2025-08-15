@@ -1,1 +1,1 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=(t,d)=>t+d,u={add:e};exports.add=e;exports.default=u;
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("../sendToKibana-DGkTsWpW.js"),n={SendToKibana:e.SendToKibana};exports.SendToKibana=e.SendToKibana;exports.default=n;

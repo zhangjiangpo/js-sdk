@@ -1,7 +1,8 @@
-const e = (t, d) => t + d, n = {
-  add: e
+import { S as a } from "../sendToKibana-ccj5S2tG.mjs";
+const e = {
+  SendToKibana: a
 };
 export {
-  e as add,
-  n as default
+  a as SendToKibana,
+  e as default
 };

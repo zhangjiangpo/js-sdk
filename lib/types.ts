@@ -1,1 +1,1 @@
-export type AddFunction = (a: number, b: number) => number;
+export type KeyVal = Record<string, any>
