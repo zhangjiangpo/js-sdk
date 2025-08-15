@@ -1,5 +1,5 @@
-import { SendToKibana } from '../utils/sendToKibana'
-export * from '../utils/sendToKibana'
+import * as Utils from '../utils/index'
+export * from '../utils/index'
 export default {
-  SendToKibana
+  ...Utils
 }

@@ -1,6 +1,6 @@
 type StorageType = 'local' | 'session'
 
-const storage = {
+export const storage = {
   set(key: string, value: any, type: StorageType = 'local') {
     window[`${type}Storage`].setItem(key, JSON.stringify(value))
   },
