@@ -800,6 +800,13 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jzx-sdk@zhangjiangpo/js-sdk:
+  version "0.0.1"
+  resolved "https://codeload.github.com/zhangjiangpo/js-sdk/tar.gz/e205a7b09584d6cde0923432f8bc30b048a4aa27"
+  dependencies:
+    vite-plugin-dts "^4.5.4"
+    vue "^3.5.18"
+
 kolorist@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.8.0.tgz#edddbbbc7894bc13302cdf740af6374d4a04743c"

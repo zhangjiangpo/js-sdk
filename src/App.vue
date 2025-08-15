@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { add } from 'jzx-sdk/core'
+import { add } from 'zhangjiangpo/js-sdk'
 console.log(123, add)
 console.log(123, add('1', '2'))
 </script>
