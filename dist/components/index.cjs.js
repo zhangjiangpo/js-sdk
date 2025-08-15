@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});require("vue");const e=require("../HelloWorld.vue_vue_type_script_setup_true_lang-DhOfr3BE.js"),o={install(l){l.component("HelloWorld",e._sfc_main)}};exports.HelloWorld=e._sfc_main;exports.default=o;

@@ -1,1 +1,0 @@
-"use strict";const e=require("vue"),s={class:"greetings"},t=e.defineComponent({__name:"HelloWorld",props:{msg:{}},setup(o){return(n,r)=>(e.openBlock(),e.createElementBlock("div",s,[e.createElementVNode("h1",null,e.toDisplayString(n.msg),1)]))}});exports._sfc_main=t;
