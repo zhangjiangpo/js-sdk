@@ -1,0 +1,43 @@
+{
+  "name": "jzx-sdk",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-sdk.umd.js",
+  "module": "./dist/my-sdk.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/jzx-sdk.es.js",
+      "require": "./dist/jzx-sdk.umd.js"
+    },
+    "./core": {
+      "import": "./dist/core/index.es.js",
+      "require": "./dist/core/index.umd.js",
+      "types": "./dist/types/core.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.es.js",
+      "require": "./dist/components/index.umd.js",
+      "types": "./dist/types/components.d.ts"
+    }
+  },
+  "types": "./index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^4.5.4",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2",
+    "vue-tsc": "^3.0.5"
+  }
+}
