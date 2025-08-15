@@ -1,0 +1,1 @@
+{"root":["./vite.config.ts","./lib/index.ts","./lib/types.ts","./lib/components/helloworld.vue","./lib/components/index.ts","./lib/core/index.ts","./src/app.vue","./src/main.ts","./src/vite-env.d.ts","./src/components/helloworld.vue"],"errors":true,"version":"5.8.3"}

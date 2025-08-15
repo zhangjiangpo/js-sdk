@@ -8,10 +8,10 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      insertTypesEntry: true,
-      include: ['lib/**/*'],
-      outDir: 'dist/types'
-    })
+      include: ["lib/**/*"],
+      outDir: "dist/types",
+      rollupTypes: true
+    }),
   ],
   build: {
     lib: {
