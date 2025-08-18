@@ -45,7 +45,7 @@ export class SendToKibana {
    * @param appId 业务标识符 默认jzx-teacher
    * @param settings 发送设置 ST_SETTINGS
    */
-  constructor(url: string | null = null, appId: string | null = null, settings: ST_SETTINGS) {
+  constructor(url?: string | null, appId?: string | null, settings?: ST_SETTINGS) {
     this.url = url || this.url
     this.appId = appId || this.appId
     this.settings = {
