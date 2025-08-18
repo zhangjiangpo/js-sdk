@@ -16,13 +16,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        main: resolve(__dirname, 'lib/index.ts'),
+        index: resolve(__dirname, 'lib/index.ts'),
         core: resolve(__dirname, 'lib/core/index.ts'),
         components: resolve(__dirname, 'lib/components/index.ts')
       },
       name: 'JzxSdk',
       fileName: (format, entryName) => {
-        if (entryName === 'main') {
+        if (entryName === 'index') {
           return `jzx-sdk.${format}.js`
         }
         return `${entryName}/index.${format}.js`

@@ -8,7 +8,7 @@
   "module": "./dist/my-sdk.es.js",
   "exports": {
     ".": {
-      "types": "./dist/types/main.d.ts",
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/jzx-sdk.es.js",
       "require": "./dist/jzx-sdk.umd.js"
     },
@@ -23,7 +23,7 @@
       "require": "./dist/components/index.umd.js"
     }
   },
-  "types": "./dist/types/main.d.ts",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",

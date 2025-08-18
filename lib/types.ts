@@ -1,1 +1,1 @@
-export type KeyVal = Record<string, any>
+export type KeyVal = Record<string, any> // 对应Object类型数据

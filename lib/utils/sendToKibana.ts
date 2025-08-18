@@ -4,6 +4,11 @@ import storage from './storage'
 import { randomStr } from './index'
 import axios from 'axios'
 
+/**
+ * 发送日志到kibana setting说明
+ * muiltiLength: 超过多少条日志发送一次
+ * intervalTime: 超过多少时间发送一次
+ */
 type ST_SETTINGS = {
   muiltiLength?: number
   intervalTime?: number
@@ -23,15 +28,23 @@ const httpPost = (url: string, params: KeyVal) => {
       })
   })
 }
-
+/**
+ * 发送日志到kibana的类
+ */
 export class SendToKibana {
-  appId: string = 'jzx-teacher'
+  appId: string = 'jzx-teacher' //日志查询的appId 业务标识符
   url: string = 'https://log.aixuexi.com/log/multi/jzx?strict=false' // Replace with actual endpoint
   settings: ST_SETTINGS = {
     muiltiLength: 20,
     intervalTime: 1000 * 60 * 5
   }
   sendData: KeyVal = {}
+  /**
+   * 构造函数
+   * @param url 日志接收地址 默认jzx的
+   * @param appId 业务标识符 默认jzx-teacher
+   * @param settings 发送设置 ST_SETTINGS
+   */
   constructor(url: string | null = null, appId: string | null = null, settings: ST_SETTINGS) {
     this.url = url || this.url
     this.appId = appId || this.appId
@@ -40,12 +53,20 @@ export class SendToKibana {
       ...settings
     }
   }
+  /**
+   * 设置公共参数
+   * @param data 设置公共参数 后续日志都会携带
+   */
   setCommon(data: KeyVal) {
     this.sendData = {
       ...this.sendData,
       ...data
     }
   }
+  /**
+   * 发送日志
+   * @param msg KeyVal 发送的日志内容
+   */
   send(msg: KeyVal) {
     try {
       const storageKey = `jzx_kibanaLog_${storage.get('userId')}`

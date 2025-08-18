@@ -4,7 +4,11 @@ export * from './sendToKibana'
 import storage from './storage'
 export * from './storage'
 
-// 生成随机字符串
+/**
+ * 生成随机字符串
+ * @param len 生成随机字符串
+ * @returns string
+ */
 export function randomStr(len: number = 20) {
   const RandomString = "ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz0123456789_"
   let rsl = RandomString.length
